@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/img_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:scaleType="centerCrop" />
+
+    <portalbeanz.com.doublefoot.view.OpenSanTextViewBold
+        android:id="@+id/txt_package_name"
+        style="@style/TextView.WithMarginALL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="COUPLES PACKAGES"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="20sp" />
+
+    <portalbeanz.com.doublefoot.view.OpenSanTextViewSemiBold
+        android:id="@+id/txt_package_detail"
+        style="@style/TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Includes Full Body Massage + Dead Sea Mineral Rich Salt Crysta"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_size_normal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30dp"
+        android:layout_marginLeft="@dimen/large_margin"
+        android:layout_marginRight="@dimen/large_margin"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:background="@color/main_gray_v2"
+        android:text="Book Now"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="@dimen/large_margin"
+        android:background="@color/white"
+        android:paddingBottom="3dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#c9c9c9" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_contact_us"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3">
+
+                <ImageView
+                    android:id="@+id/img_contact"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="@dimen/normal_margin"
+                    android:src="@drawable/ic_contact" />
+
+                <portalbeanz.com.doublefoot.view.OpenSanTextViewSemiBold
+                    android:id="@+id/txt_contact_us"
+                    style="@style/TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/img_contact"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/normal_margin"
+                    android:text="@string/contact_us"
+                    android:textAlignment="center"
+                    android:textAllCaps="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5">
+
+                <ImageView
+                    android:id="@+id/img_walkin"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="@dimen/normal_margin"
+                    android:src="@drawable/ic_walkin" />
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="#c9c9c9" />
+
+                <portalbeanz.com.doublefoot.view.OpenSanTextViewSemiBold
+                    android:id="@+id/txt_walkin"
+                    style="@style/TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/img_walkin"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/normal_margin"
+                    android:text="@string/walkin_available"
+                    android:textAlignment="center"
+                    android:textAllCaps="true" />
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="#c9c9c9" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3">
+
+                <ImageView
+                    android:id="@+id/img_share"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="@dimen/normal_margin"
+                    android:src="@drawable/ic_share" />
+
+                <portalbeanz.com.doublefoot.view.OpenSanTextViewSemiBold
+                    android:id="@+id/txt_share"
+                    style="@style/TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/img_share"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/normal_margin"
+                    android:text="@string/share"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/text_size_xnormal" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true"
+            android:background="#c9c9c9" />
+    </RelativeLayout>
+</LinearLayout>

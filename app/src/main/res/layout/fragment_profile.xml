@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/img_time_line"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <portalbeanz.com.doublefoot.view.RoundedImageView
+            android:id="@+id/img_avatar"
+            android:layout_marginTop="@dimen/_30dp"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_user_default_v2"/>
+
+        <portalbeanz.com.doublefoot.view.OpenSanTextView
+            android:id="@+id/txt_user_name"
+            android:textSize="@dimen/text_size_large"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:layout_below="@id/img_avatar"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="Welcome"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.pnikosis.materialishprogress.ProgressWheel
+            android:id="@+id/progress_wheel"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="60dp"
+            android:visibility="gone"
+            wheel:barColor="@color/color_action_bar"
+            android:layout_centerHorizontal="true"
+            wheel:progressIndeterminate="true"
+            wheel:fillRadius="true" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/large_margin"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_my_page_profile"
+                        android:textColor="@color/white"
+                        android:src="@drawable/bg_my_page_profile"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <portalbeanz.com.doublefoot.view.AutoResizeTextView
+                        android:id="@+id/txt_my_page_profile"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:layout_below="@id/img_my_page_profile"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_normal"
+                        android:text="@string/my_page_profile"
+                        android:textColor="#353535"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_my_page_change_password"
+                        android:textColor="@color/white"
+                        android:src="@drawable/bg_my_page_change_password"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <portalbeanz.com.doublefoot.view.AutoResizeTextView
+                        android:id="@+id/txt_my_page_privacy"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:layout_below="@id/img_my_page_change_password"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_normal"
+                        android:text="@string/my_page_change_password"
+                        android:textColor="#353535"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_my_page_logout"
+                        android:textColor="@color/white"
+                        android:src="@drawable/bg_my_page_logout"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <portalbeanz.com.doublefoot.view.AutoResizeTextView
+                        android:id="@+id/txt_my_page_logout"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:layout_below="@id/img_my_page_logout"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_normal"
+                        android:text="@string/my_page_logout"
+                        android:textColor="#353535"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

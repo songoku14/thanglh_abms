@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/build/intermediates/res/merged/androidTest/debug/anim/slide_out_bottom.xml",
+        "source": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/build/intermediates/bundles/debug/res/anim/slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/build/intermediates/res/merged/androidTest/debug/anim/slide_in_bottom.xml",
+        "source": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/build/intermediates/bundles/debug/res/anim/slide_in_bottom.xml"
+    }
+]

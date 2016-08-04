@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@drawable/locate_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/large_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:id="@+id/ic_locate"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_my_locate"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content" />
+
+            <portalbeanz.com.doublefoot.view.OpenSanTextViewBold
+                android:layout_centerVertical="true"
+                android:id="@+id/txt_address"
+                android:textColor="#231f20"
+                style="@style/TextView.WithMarginLR"
+                android:textSize="@dimen/text_size_large"
+                android:layout_toRightOf="@id/ic_locate"
+                android:text="5 Coleman St,\n  Singapore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_contact_us"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:id="@+id/ic_phone"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_phone"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content" />
+
+            <portalbeanz.com.doublefoot.view.OpenSanTextViewBold
+                android:layout_centerVertical="true"
+                style="@style/TextView.WithMarginLR"
+                android:textColor="#231f20"
+                android:textSize="@dimen/text_size_large"
+                android:layout_toRightOf="@id/ic_phone"
+                android:text="9723 0169 "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

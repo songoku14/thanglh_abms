@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="48dp">
+
+       <Switch
+           android:id="@+id/swi_notif"
+           android:layout_centerVertical="true"
+           android:layout_marginRight="@dimen/large_margin"
+           android:layout_alignParentRight="true"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent" />
+
+       <portalbeanz.com.doublefoot.view.OpenSanTextViewSemiBold
+           style="@style/TextView.WithPaddingALL"
+           android:layout_marginLeft="@dimen/normal_margin"
+           android:textSize="@dimen/text_size_xnormal"
+           android:text="@string/setting_turn_on_off_notif"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+   </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <Switch
+            android:id="@+id/swi_sound"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/large_margin"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <portalbeanz.com.doublefoot.view.OpenSanTextViewSemiBold
+            style="@style/TextView.WithPaddingALL"
+            android:layout_marginLeft="@dimen/normal_margin"
+            android:textSize="@dimen/text_size_xnormal"
+            android:text="@string/setting_turn_on_off_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+    </RelativeLayout>
+
+</LinearLayout>

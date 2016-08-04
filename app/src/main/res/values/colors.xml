@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#e74c3c</color>
+    <color name="item_navigation_color_title">#ecf0f1</color>
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="red_pomegranate">#F52B1E</color>
+    <color name="green_emerald">#2ecc71</color>
+    <color name="nephritis">#27ae60</color>
+    <color name="white_clouds">#ecf0f1</color>
+    <color name="blue_normal">#22ABD2</color>
+    <color name="blue_dark">#0C9AC0</color>
+    <color name="transparent">#00000000</color>
+    <color name="dark_gray">#3a3a3a</color>
+    <color name="light_gray">#bdc3c7</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="text_tab_unselect">#E9A597</color>
+    <color name="color_action_bar">#231f20</color>
+    <color name="battlesip_gray">#838383</color>
+    <color name="bg_tab_navigation">#f9f9f9</color>
+    <color name="red_alizarin">#e74c3c</color>
+    <color name="bg_left_menu">#231f20</color>
+    <color name="bg_commen">#dee1e6</color>
+    <color name="main_gray_v2">#41281b</color>
+    <color name="highlight_gray">#322b2d</color>
+    <color name="highlight_gray_selected">#6e6064</color>
+</resources>

@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/build/intermediates/res/merged/debug/drawable/timepicker_divider_line.xml",
+        "source": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/res/drawable/timepicker_divider_line.xml"
+    },
+    {
+        "merged": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/build/intermediates/res/merged/debug/drawable/bg_cancel_v2.png",
+        "source": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/res/drawable/bg_cancel_v2.png"
+    },
+    {
+        "merged": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/build/intermediates/res/merged/debug/drawable/bg_book_now_v2.png",
+        "source": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/res/drawable/bg_book_now_v2.png"
+    },
+    {
+        "merged": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/build/intermediates/res/merged/debug/drawable/wheel_bg.xml",
+        "source": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/res/drawable/wheel_bg.xml"
+    },
+    {
+        "merged": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/build/intermediates/res/merged/debug/drawable/timepicker_sel_text_item.xml",
+        "source": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/res/drawable/timepicker_sel_text_item.xml"
+    },
+    {
+        "merged": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/build/intermediates/res/merged/debug/drawable/ic_basic_info_2.png",
+        "source": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/res/drawable/ic_basic_info_2.png"
+    },
+    {
+        "merged": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/build/intermediates/res/merged/debug/drawable/wheel_val.xml",
+        "source": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/res/drawable/wheel_val.xml"
+    }
+]

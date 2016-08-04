@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:minHeight="130dp"
+    android:layout_height="wrap_content"
+    android:background="#dee1e6"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_book"
+        android:background="@color/main_gray_v2"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/_20dp"
+        android:text="BOOK NOW"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_width="70dp"
+        android:layout_height="70dp" />
+
+    <portalbeanz.com.doublefoot.view.OpenSanTextViewBold
+        android:id="@+id/txt_package_name"
+        android:text="2 Hour"
+        android:layout_toLeftOf="@id/btn_book"
+        android:paddingRight="@dimen/small_margin"
+        android:layout_alignParentLeft="true"
+        style="@style/TextView.WithPaddingALL"
+        android:textSize="@dimen/text_size_large"
+        android:textColor="@color/main_gray_v2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <portalbeanz.com.doublefoot.view.OpenSanTextViewSemiBold
+        android:id="@+id/txt_time_1"
+        android:layout_below="@id/txt_package_name"
+        android:layout_toLeftOf="@id/btn_book"
+        android:paddingRight="@dimen/small_margin"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="@dimen/normal_margin"
+        android:text="2 Hour"
+        style="@style/TextView"
+        android:textSize="@dimen/text_size_normal"
+        android:textColor="@color/main_gray_v2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <portalbeanz.com.doublefoot.view.OpenSanTextViewSemiBold
+        android:id="@+id/txt_time_2"
+        android:layout_below="@id/txt_time_1"
+        android:paddingLeft="@dimen/normal_margin"
+        android:layout_toLeftOf="@id/btn_book"
+        android:paddingRight="@dimen/small_margin"
+        android:layout_alignParentLeft="true"
+        android:text="2 Hour"
+        style="@style/TextView"
+        android:textColor="@color/main_gray_v2"
+        android:textSize="@dimen/text_size_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <portalbeanz.com.doublefoot.view.OpenSanTextViewSemiBold
+        android:id="@+id/txt_time_3"
+        android:layout_below="@id/txt_time_2"
+        android:paddingLeft="@dimen/normal_margin"
+        android:layout_toLeftOf="@id/btn_book"
+        android:paddingRight="@dimen/small_margin"
+        android:layout_alignParentLeft="true"
+        android:text="2 Hour"
+        style="@style/TextView"
+        android:textColor="@color/main_gray_v2"
+        android:textSize="@dimen/text_size_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <portalbeanz.com.doublefoot.view.OpenSanTextViewSemiBold
+        android:id="@+id/txt_time_4"
+        android:layout_below="@id/txt_time_3"
+        android:paddingLeft="@dimen/normal_margin"
+        android:layout_toLeftOf="@id/btn_book"
+        android:paddingRight="@dimen/small_margin"
+        android:paddingBottom="@dimen/normal_margin"
+        android:layout_alignParentLeft="true"
+        android:text="2 Hour"
+        style="@style/TextView"
+        android:textColor="@color/main_gray_v2"
+        android:textSize="@dimen/text_size_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

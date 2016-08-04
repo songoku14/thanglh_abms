@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@color/date_picker_view_animator"
+    android:gravity="top"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--<include layout="@layout/date_picker_header_view" />-->
+
+        <include
+            layout="@layout/date_picker_selected_date" />
+    </LinearLayout>
+
+
+    <include layout="@layout/date_picker_header_view" />
+
+    <include layout="@layout/date_picker_view_animator" />
+
+    <RelativeLayout
+        android:id="@+id/rl_appointment_start_time"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <portalbeanz.com.doublefoot.view.OpenSanTextViewSemiBold
+            android:id="@+id/txt_appointment_start_time"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="Start Time"
+            android:textColor="#41281b"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/img_appointment_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="16dp"
+            android:src="@drawable/ic_basic_info_2" />
+
+        <portalbeanz.com.doublefoot.view.OpenSanEditTextSemiBold
+            android:id="@+id/edt_appointment_start_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toLeftOf="@id/img_appointment_start_time"
+            android:layout_toRightOf="@id/txt_appointment_start_time"
+            android:background="#00000000"
+            android:focusable="false"
+            android:singleLine="true"
+            android:textColor="#41281b"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#bdc3c7" />
+
+    <RelativeLayout
+        android:id="@+id/rl_appointment_end_time"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <portalbeanz.com.doublefoot.view.OpenSanTextViewSemiBold
+            android:id="@+id/txt_appointment_end_time"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="End Time"
+            android:textColor="#41281b"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/img_appointment_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="16dp"
+            android:src="@drawable/ic_basic_info_2" />
+
+        <portalbeanz.com.doublefoot.view.OpenSanEditTextSemiBold
+            android:id="@+id/edt_appointment_end_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toLeftOf="@id/img_appointment_end_time"
+            android:layout_toRightOf="@id/txt_appointment_end_time"
+            android:background="#00000000"
+            android:focusable="false"
+            android:singleLine="true"
+            android:textColor="#41281b"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/line_background" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="68dp">
+        <Button
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/bg_book_now_v2"
+            android:id="@+id/done"
+            android:textColor="@color/white"
+            android:text="Book now"
+            android:textSize="18sp"
+            android:textAllCaps="true"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bg_cancel_v2"
+            android:text="Cancel"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textColor="#312b2d"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <!--<include layout="@layout/date_picker_done_button" />-->
+</LinearLayout>

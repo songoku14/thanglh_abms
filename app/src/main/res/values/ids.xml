@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="float_label" />
+    <item type="id" name="edit_text" />
+    <item name="notif_need_to_enter_date_before" type="id">You need to enter date before</item>
+</resources>

@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/build/intermediates/res/merged/release/layout/date_picker_header_view.xml",
+        "source": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/res/layout/date_picker_header_view.xml"
+    },
+    {
+        "merged": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/build/intermediates/res/merged/release/layout/date_picker_dialog.xml",
+        "source": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/res/layout/date_picker_dialog.xml"
+    },
+    {
+        "merged": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/build/intermediates/res/merged/release/layout/time_header_label.xml",
+        "source": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/res/layout/time_header_label.xml"
+    },
+    {
+        "merged": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/build/intermediates/res/merged/release/layout/date_picker_view_animator.xml",
+        "source": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/res/layout/date_picker_view_animator.xml"
+    },
+    {
+        "merged": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/build/intermediates/res/merged/release/layout/timepicker_layout.xml",
+        "source": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/res/layout/timepicker_layout.xml"
+    },
+    {
+        "merged": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/build/intermediates/res/merged/release/layout/date_picker_selected_date.xml",
+        "source": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/res/layout/date_picker_selected_date.xml"
+    },
+    {
+        "merged": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/build/intermediates/res/merged/release/layout/date_picker_done_button.xml",
+        "source": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/res/layout/date_picker_done_button.xml"
+    },
+    {
+        "merged": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/build/intermediates/res/merged/release/layout/date_picker_dialog_origin.xml",
+        "source": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/res/layout/date_picker_dialog_origin.xml"
+    },
+    {
+        "merged": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/build/intermediates/res/merged/release/layout/timepicker_line.xml",
+        "source": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/res/layout/timepicker_line.xml"
+    },
+    {
+        "merged": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/build/intermediates/res/merged/release/layout/time_picker_dialog.xml",
+        "source": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/res/layout/time_picker_dialog.xml"
+    },
+    {
+        "merged": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/build/intermediates/res/merged/release/layout/timepicker_toolbar.xml",
+        "source": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/res/layout/timepicker_toolbar.xml"
+    },
+    {
+        "merged": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/build/intermediates/res/merged/release/layout/year_label_text_view.xml",
+        "source": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/res/layout/year_label_text_view.xml"
+    }
+]

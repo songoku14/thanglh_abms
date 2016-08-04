@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_item_masseur_in_schedule">
+
+    <portalbeanz.com.doublefoot.view.CircleImageView
+        android:id="@+id/img_avatar"
+        android:layout_marginLeft="@dimen/normal_margin"
+        android:layout_width="@dimen/size_avatar_normal"
+        android:layout_height="@dimen/size_avatar_normal"
+        android:layout_centerVertical="true" />
+
+
+    <!--<portalbeanz.com.doublefoot.view.OpenSanButton-->
+        <!--android:id="@+id/btn_book"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:text="@string/book"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:layout_marginRight="@dimen/normal_margin"-->
+        <!--android:background="@drawable/bg_btn_sign_in"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="@dimen/text_size_normal"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <RelativeLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/normal_margin"
+        android:layout_toRightOf="@id/img_avatar">
+
+        <portalbeanz.com.doublefoot.view.OpenSanTextViewSemiBold
+            android:id="@+id/txt_name"
+            style="@style/TextView.WithPaddingLR"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:text="name"
+            android:textSize="@dimen/text_size_xlarge" />
+
+        <portalbeanz.com.doublefoot.view.OpenSanTextView
+            android:id="@+id/txt_lbl_experience"
+            style="@style/TextView"
+            android:paddingLeft="@dimen/normal_margin"
+            android:layout_below="@id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:text="@string/experience"
+            android:textSize="@dimen/text_size_xnormal" />
+
+        <portalbeanz.com.doublefoot.view.OpenSanTextView
+            android:id="@+id/txt_working_experience"
+            style="@style/TextView"
+            android:layout_toRightOf="@id/txt_lbl_experience"
+            android:layout_below="@id/txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:text="3 year"
+            android:textSize="@dimen/text_size_xnormal" />
+
+        <portalbeanz.com.doublefoot.view.OpenSanTextView
+            android:id="@+id/txt_lbl_specialization"
+            style="@style/TextView"
+            android:layout_marginTop="@dimen/small_margin"
+            android:paddingLeft="@dimen/normal_margin"
+            android:layout_below="@id/txt_lbl_experience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/specialization"
+            android:textSize="@dimen/text_size_xnormal" />
+
+        <portalbeanz.com.doublefoot.view.OpenSanTextView
+            android:id="@+id/txt_working_specialization"
+            style="@style/TextView"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_toRightOf="@id/txt_lbl_specialization"
+            android:layout_below="@id/txt_lbl_experience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="specialization"
+            android:textSize="@dimen/text_size_xnormal" />
+    </RelativeLayout>
+
+</RelativeLayout>

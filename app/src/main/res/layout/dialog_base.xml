@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/title_dialog"
+        android:layout_width="match_parent"
+        android:background="@color/color_action_bar"
+        android:layout_height="@dimen/title_height">
+
+        <portalbeanz.com.doublefoot.view.OpenSanTextViewBold
+            android:id="@+id/txt_title_dialog"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white_clouds"
+            android:textSize="@dimen/text_size_large"
+            android:textAllCaps="true"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical">
+
+                <portalbeanz.com.doublefoot.view.OpenSanButton
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:text="Cancel"
+                    android:id="@+id/btnCancel"
+                    style="@style/style_share_button"
+                    android:layout_marginLeft="8dp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical">
+
+                <portalbeanz.com.doublefoot.view.OpenSanButton
+                    android:layout_marginRight="8dp"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:text="Share"
+                    style="@style/style_share_button"
+                    android:id="@+id/btnShare"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <ViewStub
+        android:id="@+id/view_stub"
+        android:inflatedId="@+id/content_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!--<View-->
+    <!--android:id="@+id/line_seperator"-->
+    <!--android:paddingTop="5dp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+
+    <!--android:background="@color/light_gray"></View>-->
+
+    <LinearLayout
+        android:id="@+id/layout_actions"
+        android:layout_width="match_parent"
+
+
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+        <portalbeanz.com.doublefoot.view.OpenSanButton
+            android:paddingTop="15dp"
+            style="@style/style_positive_button"
+            android:id="@+id/btn_positive"
+            android:layout_marginLeft="@dimen/normal_margin"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="@color/white_clouds"
+            android:text="@string/ok"
+            android:padding="@dimen/normal_margin"
+            android:layout_marginRight="@dimen/normal_margin"
+            android:layout_marginBottom="@dimen/normal_margin"
+            android:layout_height="wrap_content" />
+
+        <portalbeanz.com.doublefoot.view.OpenSanButton
+            android:paddingTop="15dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/white_clouds"
+            android:text="@string/close"
+            android:layout_marginLeft="@dimen/normal_margin"
+            android:layout_marginRight="@dimen/normal_margin"
+            android:padding="@dimen/normal_margin"
+            android:background="@drawable/bg_button_negative"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/normal_margin"
+            android:id="@+id/btn_negative" />
+    </LinearLayout>
+
+</LinearLayout>

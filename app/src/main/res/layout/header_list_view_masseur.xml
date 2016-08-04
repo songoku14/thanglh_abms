@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:src="@drawable/bg_cover_schedule"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <portalbeanz.com.doublefoot.view.OpenSanTextViewBold
+        style="@style/TextView"
+        android:paddingLeft="@dimen/normal_margin"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/text_size_huge"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Choose Masseur" />
+</LinearLayout>

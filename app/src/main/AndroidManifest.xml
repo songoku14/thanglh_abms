@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="portalbeanz.com.doublefoot">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name="portalbeanz.com.doublefoot.application.AbmsApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="portalbeanz.com.doublefoot.activity.ActivitySplashScreen"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="portalbeanz.com.doublefoot.activity.ActivityMain"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="portalbeanz.com.doublefoot.activity.ActivityLogin"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="portalbeanz.com.doublefoot.activity.ActivityDetail"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+
+        </activity>
+
+        <activity
+            android:name="portalbeanz.com.doublefoot.activity.ActivityChangePassword"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="portalbeanz.com.doublefoot.activity.ActivityEditProfile"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="portalbeanz.com.doublefoot.activity.ActivityRegister"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="portalbeanz.com.doublefoot.activity.ActivityPackageDetail"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="portalbeanz.com.doublefoot.activity.ActivityBooking"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="portalbeanz.com.doublefoot.activity.ActivityPerformBook"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="portalbeanz.com.doublefoot.activity.ActivityForgotPassword"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver
+            android:name="portalbeanz.com.doublefoot.gcm.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.example.thangit14.abms" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="portalbeanz.com.doublefoot.gcm.GcmIntentService" />
+
+        <receiver android:name="portalbeanz.com.doublefoot.broadcast.AlarmReceive" />
+
+    </application>
+</manifest>

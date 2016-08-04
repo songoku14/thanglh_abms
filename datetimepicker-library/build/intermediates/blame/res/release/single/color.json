@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/build/intermediates/res/merged/release/color/done_text_color.xml",
+        "source": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/res/color/done_text_color.xml"
+    },
+    {
+        "merged": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/build/intermediates/res/merged/release/color/date_picker_selector.xml",
+        "source": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/res/color/date_picker_selector.xml"
+    },
+    {
+        "merged": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/build/intermediates/res/merged/release/color/date_picker_year_selector.xml",
+        "source": "/Users/thangit14/Documents/android/workspace/ABMS/datetimepicker-library/res/color/date_picker_year_selector.xml"
+    }
+]

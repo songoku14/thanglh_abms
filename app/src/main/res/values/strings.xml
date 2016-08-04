@@ -1,0 +1,152 @@
+<resources>
+    <string name="app_name">Double Foot</string>
+    <string name="loading_data">loading...</string>
+    <string name="title_activity_main">Double Foot</string>
+    <string name="title_lorem">title test</string>
+    <string name="content_lorem">content test</string>
+    <string name="done">Done</string>
+    <string name="ok">Ok</string>
+    <string name="close">Cancel</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Reset Password</string>
+    <string name="login_google">Login With Google</string>
+    <string name="login_facebook">Login With Facebook</string>
+    <string name="or">or</string>
+    <string name="sign_in">Sign in</string>
+    <string name="register">Register</string>
+    <string name="list_choice_avatar">Choose Avatar</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="title_sign_up">Sign Up</string>
+    <string name="add_avatar">Add Avatar</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="name">Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="loading_register">Registing ...</string>
+    <string name="register_success">Register Successful</string>
+    <string name="loading_upload_avatar">uploading avatar ...</string>
+    <string name="change_avatar">Change Avatar</string>
+    <string name="name_not_null">Name can not be empty</string>
+    <string name="email_not_null">Email can not be empty</string>
+    <string name="error_email_not_valid">Email is not correct format</string>
+    <string name="password_not_null">Password can not be empty</string>
+    <string name="confirm_password_not_null">Confirm password not nul</string>
+    <string name="password_max_20_char">Password max 20 character</string>
+    <string name="password_min_3_char">Password min 3 character</string>
+    <string name="confirm_password_must_same_password">Confirm password must be the same password</string>
+    <string name="tab_dashboard">Dashboard</string>
+    <string name="tab_schedule">Booking</string>
+    <string name="tab_profile">Profile</string>
+    <string name="format_date">yyyy/MM/dd</string>
+    <string name="format_time">HH:mm</string>
+    <string name="format_am_pm">aa</string>
+    <string name="book">Book</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="gender">Gender</string>
+    <string name="edit_photo">Edit Photo</string>
+    <string name="save">Save</string>
+    <string name="basic_info_display_name">Nick Name</string>
+    <string name="basic_info_first_name">First Name</string>
+    <string name="basic_info_last_name">Last Name</string>
+    <string name="basic_info_birth_day">Birthday</string>
+    <string name="basic_info_gender">Gender</string>
+    <string name="basic_info_introduce">Introduce</string>
+    <string name="basic_info_change_password">Change Password</string>
+    <string name="confirm_un_change_password">Are you sure?</string>
+    <string name="newpassword_not_equal_oldpassword">New password can\\\'t same Old password</string>
+    <string name="profile_info">Profile Information</string>
+    <string name="souce_year">/</string>
+    <string name="souce_month">/</string>
+    <string name="loading_updating_profile">uploading profile</string>
+    <string name="update_avatar_success">upload avatar successful</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="my_page_profile">Profile</string>
+    <string name="appointment_date">Date</string>
+    <string name="appointment_start_time">Start time</string>
+    <string name="appointment_end_time">End Time</string>
+    <string name="choose">Choose</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_dialog_pick_appointment_start_time">Start Time</string>
+    <string name="title_dialog_pick_appointment_end_time">End Time</string>
+    <string name="hour">&#160;h</string>
+    <string name="minute">&#160;m</string>
+    <string name="book_appointment_successful">Book appointment successful</string>
+    <string name="notif_date_can_not_empty">Date can not empty</string>
+    <string name="notif_start_time_can_not_empty">Start time can not empty</string>
+    <string name="notif_end_time_can_not_empty">End time can not empty</string>
+    <string name="experience">Experience :&#160;</string>
+    <string name="basic_info_working_experience">Experience</string>
+    <string name="basic_info_specialization">Specialization</string>
+    <string name="set_unavailable">Unavailable</string>
+    <string name="choose_customer">Customer</string>
+    <string name="choose_masseur">Masseur</string>
+    <string name="lbl_is_masseur">Is Masseur</string>
+    <string name="loading_login">Login ...</string>
+    <string name="notif_update_un_available_successful">Send unavailable date to server successful</string>
+    <string name="year">year</string>
+    <string name="tab_unavailable">Unavailable</string>
+    <string name="loading_set_un_available_date">Sending unavailable to server...</string>
+    <string name="notif_no_network">Please check your internet connection</string>
+    <string name="format_date_2">yyyy-MM-dd</string>
+    <string name="format_full_date_time">yyyy/MM/dd HH:mm:ss</string>
+    <string name="notif_upload_avatar_successful">Uploaded avatar</string>
+    <string name="loading_book_appointment">booking...</string>
+    <string name="specialization">Specialization :&#160;</string>
+    <string name="action_book">BOOK</string>
+    <string name="action_cancel">CANCEL</string>
+    <string name="loading_canel_appointment">Canceling...</string>
+    <string name="cancel_appointment_successful">Canceled appointment successful</string>
+    <string name="basic_info_email">Email</string>
+    <string name="confirm_cancel_appointment">Are you sure you want to cancel appointment</string>
+    <string name="title_dialog_cancel_appointment">Cancel appointment</string>
+    <string name="my_page_logout">Logout</string>
+    <string name="my_page_change_password">Change Password</string>
+    <string name="loading_logout">Logout ...</string>
+    <string name="logout_success">Logout successful</string>
+    <string name="update_profile_success">Update profile successful</string>
+    <string name="reset_pass_success">Reset password successful. You must check your email</string>
+    <string name="notif_session_invalid">Have error. You need to relogin</string>
+    <string name="display_name_can_not_contain_space">Display name can not contain space</string>
+    <string name="notif_you_need_login">You must to login</string>
+    <string name="action_new_book">BOOKED</string>
+    <string name="action_cancel_book">CANCELLED</string>
+    <string name="notif_has_appointment_at">You have a appointment at</string>
+    <string name="change_pass_success">Change password successful</string>
+    <string name="no_appointment">You do not have appointment</string>
+    <string name="notif_can_not_choose_past_date">You can not choose a past date</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="share">share</string>
+    <string name="walkin_available">walk-ins available</string>
+    <string name="title_activity_package_detail">Package Detail</string>
+    <string name="username">Username</string>
+    <string name="create_new_account">Create new account</string>
+    <string name="notif_wrong_username_pass">Wrong username or password</string>
+    <string name="format_price">##</string>
+    <string name="setting_turn_on_off_notif">Turn on/off notification</string>
+    <string name="setting_turn_on_off_sound">Turn on/off sound</string>
+    <string name="title_unavailabe_time">Unavailable Time</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>My Booking</item>
+        <item>Packages</item>
+        <item>Profile Setting</item>
+        <item>Setting</item>
+        <item>Locate us</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_my_booking</item>
+        <item>@drawable/ic_camera</item>
+        <item>@drawable/ic_profile_setting</item>
+        <item>@drawable/ic_setting</item>
+        <item>@drawable/ic_locate_us</item>
+    </array>
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <portalbeanz.com.doublefoot.view.OpenSanTextViewSemiBold
+        android:id="@+id/txt_no_appointment"
+        android:visibility="gone"
+        android:text="@string/no_appointment"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/red_alizarin"
+        style="@style/TextView"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.hb.views.PinnedSectionListView
+        android:id="@+id/list_item_appointment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.hb.views.PinnedSectionListView>
+
+</LinearLayout>

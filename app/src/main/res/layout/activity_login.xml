@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dee1e6"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_action_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:layout_marginTop="@dimen/large_margin"
+            android:background="#c9c9c9"
+            android:orientation="vertical">
+
+            <portalbeanz.com.doublefoot.view.OpenSanEditText
+                android:id="@+id/edt_email"
+                android:paddingLeft="@dimen/normal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_email"
+                android:hint="@string/username"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/text_size_normal" />
+
+
+            <!--<View-->
+            <!--android:layout_marginLeft="@dimen/_30dp"-->
+            <!--android:layout_marginRight="@dimen/_30dp"-->
+            <!--android:layout_marginTop="@dimen/normal_margin"-->
+            <!--android:background="@color/light_gray"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp" />-->
+
+            <portalbeanz.com.doublefoot.view.OpenSanEditText
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/normal_margin"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_password"
+                android:hint="@string/password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/text_size_normal" />
+
+            <!--<View-->
+            <!--android:layout_marginLeft="@dimen/_30dp"-->
+            <!--android:layout_marginRight="@dimen/_30dp"-->
+            <!--android:layout_marginTop="@dimen/normal_margin"-->
+            <!--android:background="@color/light_gray"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp" />-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <portalbeanz.com.doublefoot.view.OpenSanTextView
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_30dp"
+                android:text="@string/lbl_is_masseur" />
+
+            <CheckBox
+                android:id="@+id/chb_is_masseur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@android:style/Theme.Holo.Light" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <!--<portalbeanz.com.doublefoot.view.OpenSanButtonSemiBold-->
+            <!--android:id="@+id/btn_register"-->
+            <!--android:background="@drawable/bg_btn_sign_in"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:text="@string/register"-->
+            <!--android:textAllCaps="true"-->
+            <!--android:layout_width="130dp"-->
+            <!--android:textSize="@dimen/text_size_xnormal"-->
+            <!--android:layout_marginRight="@dimen/_30dp"-->
+            <!--android:layout_height="wrap_content" />-->
+
+            <portalbeanz.com.doublefoot.view.OpenSanButtonSemiBold
+                android:id="@+id/btn_login_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_btn_sign_in"
+                android:text="@string/sign_in"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_xnormal" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp">
+
+            <portalbeanz.com.doublefoot.view.OpenSanTextView
+                android:id="@+id/txt_forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/small_margin"
+                android:paddingLeft="@dimen/_20dp"
+                android:text="@string/forgot_password"
+                android:textColor="@color/black" />
+
+            <portalbeanz.com.doublefoot.view.OpenSanTextView
+                android:id="@+id/txt_new_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="@dimen/_20dp"
+                android:layout_marginTop="@dimen/small_margin"
+                android:text="@string/create_new_account"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#231f20" />
+
+            <portalbeanz.com.doublefoot.view.OpenSanTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginRight="@dimen/normal_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:paddingLeft="@dimen/_20dp"
+                android:text="OR"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#231f20" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <View
+                android:id="@+id/view_center"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_centerInParent="true"></View>
+
+            <ImageView
+                android:id="@+id/img_google"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="@dimen/_20dp"
+                android:layout_toLeftOf="@id/view_center"
+                android:src="@drawable/img_google" />
+
+            <ImageView
+                android:id="@+id/img_facebook"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="@dimen/_20dp"
+                android:layout_toRightOf="@id/view_center"
+                android:src="@drawable/img_facebook" />
+
+        </RelativeLayout>
+
+
+        <!--<portalbeanz.com.doublefoot.view.OpenSanButton-->
+        <!--android:id="@+id/btn_login_facebook"-->
+        <!--android:layout_width="240dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginTop="@dimen/normal_margin"-->
+        <!--android:background="@drawable/bg_btn_login_facebook"-->
+        <!--android:ellipsize="end"-->
+        <!--android:singleLine="true"-->
+        <!--android:text="@string/login_facebook"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="@dimen/text_size_xnormal" />-->
+
+        <!--<portalbeanz.com.doublefoot.view.OpenSanButton-->
+        <!--android:id="@+id/btn_login_google"-->
+        <!--android:layout_width="240dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginTop="@dimen/_30dp"-->
+        <!--android:background="@drawable/bg_btn_login_google"-->
+        <!--android:ellipsize="end"-->
+        <!--android:singleLine="true"-->
+        <!--android:text="@string/login_google"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="@dimen/text_size_xnormal" />-->
+
+        <!--<portalbeanz.com.doublefoot.view.OpenSanButton-->
+        <!--android:id="@+id/btn_forgot_password"-->
+        <!--android:layout_marginTop="@dimen/_20dp"-->
+        <!--android:background="@null"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:drawableLeft="@drawable/ic_forgot_password"-->
+        <!--android:drawablePadding="@dimen/normal_margin"-->
+        <!--android:textSize="@dimen/text_size_xnormal"-->
+        <!--android:text="@string/forgot_password"-->
+        <!--android:textColor="@color/dark_gray"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    </LinearLayout>
+</LinearLayout>

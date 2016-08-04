@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<portalbeanz.com.doublefoot.view.SoftKeyboardLsnedRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_action_bar"
+        layout="@layout/layout_action_bar" />
+
+    <RelativeLayout
+        android:id="@+id/container_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/layout_action_bar">
+
+        <ImageView
+            android:id="@+id/img_time_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:id="@+id/container_avatar"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp">
+
+            <portalbeanz.com.doublefoot.view.RoundedImageView
+                android:id="@+id/img_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_user_default" />
+
+            <!--<portalbeanz.com.doublefoot.view.RoundedImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:alpha="0.4"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/ic_basic_info_plus" />-->
+
+
+        </RelativeLayout>
+
+
+        <portalbeanz.com.doublefoot.view.OpenSanTextView
+            android:id="@+id/txt_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/container_avatar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:shadowColor="@color/black"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:singleLine="true"
+            android:text="@string/edit_photo"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large" />
+
+    </RelativeLayout>
+
+    <portalbeanz.com.doublefoot.view.OpenSanButtonSemiBold
+        android:id="@+id/btn_save"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/normal_margin"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:background="@drawable/bg_btn_sign_in_normal"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_large" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_save"
+        android:layout_below="@id/container_image">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/action_bar_height">
+
+
+                <portalbeanz.com.doublefoot.view.OpenSanTextViewSemiBold
+                    android:id="@+id/txt_display_name"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/basic_info_display_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <ImageView
+                    android:id="@+id/img_change_display_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="16dp"
+                    android:src="@drawable/ic_basic_info_1" />
+
+                <portalbeanz.com.doublefoot.view.OpenSanEditText
+                    android:id="@+id/edt_display_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toLeftOf="@id/img_change_display_name"
+                    android:layout_toRightOf="@id/txt_display_name"
+                    android:background="@color/transparent"
+                    android:focusable="false"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_large" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/action_bar_height">
+
+
+                <portalbeanz.com.doublefoot.view.OpenSanTextViewSemiBold
+                    android:id="@+id/txt_email"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/basic_info_email"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <portalbeanz.com.doublefoot.view.OpenSanEditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@id/txt_email"
+                    android:background="@color/transparent"
+                    android:focusable="false"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_large" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/large_height_item">
+
+                <portalbeanz.com.doublefoot.view.OpenSanTextViewSemiBold
+                    android:id="@+id/txt_birth_day"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/basic_info_birth_day"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <ImageView
+                    android:id="@+id/img_birth_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="16dp"
+                    android:src="@drawable/ic_basic_info_2" />
+
+                <portalbeanz.com.doublefoot.view.OpenSanEditText
+                    android:id="@+id/edt_birth_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toLeftOf="@id/img_birth_day"
+                    android:layout_toRightOf="@id/txt_birth_day"
+                    android:background="@color/transparent"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_large" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/large_height_item">
+
+                <portalbeanz.com.doublefoot.view.OpenSanTextViewSemiBold
+                    android:id="@+id/txt_gender"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/basic_info_gender"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <ImageView
+                    android:id="@+id/img_change_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="16dp"
+                    android:src="@drawable/ic_basic_info_2" />
+
+                <portalbeanz.com.doublefoot.view.OpenSanEditText
+                    android:id="@+id/edt_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toLeftOf="@id/img_change_gender"
+                    android:layout_toRightOf="@id/txt_gender"
+                    android:background="@color/transparent"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_large" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/action_bar_height">
+
+
+                <portalbeanz.com.doublefoot.view.OpenSanTextViewSemiBold
+                    android:id="@+id/txt_working_experience"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/basic_info_working_experience"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <ImageView
+                    android:id="@+id/img_change_working_experience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="16dp"
+                    android:src="@drawable/ic_basic_info_1" />
+
+                <portalbeanz.com.doublefoot.view.OpenSanEditText
+                    android:id="@+id/edt_working_experience"
+                    android:inputType="numberDecimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toLeftOf="@id/img_change_working_experience"
+                    android:layout_toRightOf="@id/txt_working_experience"
+                    android:background="@color/transparent"
+                    android:focusable="false"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_large" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/action_bar_height">
+
+
+                <portalbeanz.com.doublefoot.view.OpenSanTextViewSemiBold
+                    android:id="@+id/txt_specialization"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/basic_info_specialization"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <ImageView
+                    android:id="@+id/img_change_specialization"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="16dp"
+                    android:src="@drawable/ic_basic_info_1" />
+
+                <portalbeanz.com.doublefoot.view.OpenSanEditText
+                    android:id="@+id/edt_specialization"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toLeftOf="@id/img_change_specialization"
+                    android:layout_toRightOf="@id/txt_specialization"
+                    android:background="@color/transparent"
+                    android:focusable="false"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_large" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/large_height_item">
+
+                <portalbeanz.com.doublefoot.view.OpenSanTextViewSemiBold
+                    android:id="@+id/txt_introduce"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/basic_info_introduce"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <ImageView
+                    android:id="@+id/img_change_introduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="16dp"
+                    android:src="@drawable/ic_basic_info_1" />
+
+                <portalbeanz.com.doublefoot.view.OpenSanEditText
+                    android:id="@+id/edt_introduce"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toLeftOf="@id/img_change_introduce"
+                    android:layout_toRightOf="@id/txt_introduce"
+                    android:background="@color/transparent"
+                    android:focusable="false"
+                    android:imeOptions="actionDone"
+                    android:maxLength="30"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_large" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:id="@+id/container_change_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/large_height_item"
+                android:visibility="gone">
+
+                <portalbeanz.com.doublefoot.view.OpenSanTextViewSemiBold
+                    android:id="@+id/txt_change_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/basic_info_change_password"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <ImageView
+                    android:id="@+id/img_change_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="16dp"
+                    android:src="@drawable/ic_basic_info_1" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/line_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/light_gray"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</portalbeanz.com.doublefoot.view.SoftKeyboardLsnedRelativeLayout>

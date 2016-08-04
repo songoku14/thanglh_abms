@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/layout_action_bar" />
+
+    <RelativeLayout
+        android:id="@+id/container_image"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+
+        <portalbeanz.com.doublefoot.view.CircleImageView
+            android:id="@+id/img_avatar"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:src="@drawable/ic_change_avatar"
+            android:scaleType="centerCrop"
+            android:layout_width="90dp"
+            android:layout_height="90dp" />
+
+        <ImageButton
+            android:id="@+id/btn_change_avatar"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_alignTop="@id/img_avatar"
+            android:layout_alignRight="@id/img_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_plus_avatar" />
+
+    </RelativeLayout>
+
+    <portalbeanz.com.doublefoot.view.OpenSanTextView
+        android:id="@+id/txt_add_avatar"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_normal"
+        android:text="@string/add_avatar"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <portalbeanz.com.doublefoot.view.FloatLabel
+        android:id="@+id/edt_name"
+        android:imeOptions="actionNext"
+        android:hint="@string/basic_info_display_name"
+        android:layout_marginTop="@dimen/large_margin"
+        android:layout_marginLeft="@dimen/_30dp"
+        android:layout_marginRight="@dimen/_30dp"
+        android:inputType="text"
+        android:background="@color/transparent"
+        android:textColorHint="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginLeft="@dimen/_30dp"
+        android:layout_marginRight="@dimen/_30dp"
+        android:background="@color/light_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <portalbeanz.com.doublefoot.view.FloatLabel
+        android:id="@+id/edt_email"
+        android:imeOptions="actionNext"
+        android:hint="@string/email"
+        android:layout_marginTop="@dimen/large_margin"
+        android:layout_marginLeft="@dimen/_30dp"
+        android:layout_marginRight="@dimen/_30dp"
+        android:inputType="textEmailAddress"
+        android:background="@color/transparent"
+        android:textColorHint="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginLeft="@dimen/_30dp"
+        android:layout_marginRight="@dimen/_30dp"
+        android:background="@color/light_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <portalbeanz.com.doublefoot.view.FloatLabel
+        android:id="@+id/edt_password"
+        android:imeOptions="actionNext"
+        android:hint="@string/password"
+        android:textSize="@dimen/text_size_normal"
+        android:layout_marginTop="@dimen/large_margin"
+        android:layout_marginLeft="@dimen/_30dp"
+        android:layout_marginRight="@dimen/_30dp"
+        android:inputType="textPassword"
+        android:background="@color/transparent"
+        android:textColorHint="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginLeft="@dimen/_30dp"
+        android:layout_marginRight="@dimen/_30dp"
+        android:background="@color/light_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <portalbeanz.com.doublefoot.view.FloatLabel
+        android:id="@+id/edt_confirm_password"
+        android:imeOptions="actionDone"
+        android:hint="@string/confirm_password"
+        android:layout_marginTop="@dimen/large_margin"
+        android:layout_marginLeft="@dimen/_30dp"
+        android:layout_marginRight="@dimen/_30dp"
+        android:inputType="textPassword"
+        android:background="@color/transparent"
+        android:textColorHint="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginLeft="@dimen/_30dp"
+        android:layout_marginRight="@dimen/_30dp"
+        android:background="@color/light_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_height="wrap_content">
+        <portalbeanz.com.doublefoot.view.OpenSanTextView
+            android:text="@string/lbl_is_masseur"
+            android:layout_gravity="center"
+            style="@style/TextView"
+            android:layout_marginLeft="@dimen/_30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/chb_is_masseur"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <portalbeanz.com.doublefoot.view.OpenSanButtonSemiBold
+            android:id="@+id/btn_register"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_btn_sign_in"
+            android:text="@string/sign_up"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_login"-->
+    <!--android:text="@string/login"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" />-->
+
+</LinearLayout>

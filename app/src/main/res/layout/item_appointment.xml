@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_item_appointment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_time"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:paddingRight="@dimen/large_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <portalbeanz.com.doublefoot.view.OpenSanTextView
+        android:id="@+id/txt_time"
+        android:text="4:45"
+        android:textColor="@color/black"
+        android:layout_marginLeft="@dimen/large_margin"
+        android:layout_marginRight="@dimen/normal_margin"
+        android:textSize="@dimen/text_size_huge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <portalbeanz.com.doublefoot.view.OpenSanTextView
+        android:id="@+id/txt_am_pm"
+        android:text="AM"
+        android:layout_toRightOf="@id/txt_time"
+        android:textAllCaps="true"
+        android:textSize="@dimen/text_size_normal"
+        android:textColor="@color/dark_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <portalbeanz.com.doublefoot.view.OpenSanTextView
+        android:id="@+id/txt_name"
+        android:layout_toRightOf="@id/ll_time"
+        android:textSize="@dimen/text_size_xlarge"
+        android:lines="1"
+        android:text="name"
+        style="@style/TextView.WithPaddingALL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/img_avatar"
+        android:layout_toRightOf="@id/ll_time"
+        android:layout_below="@id/txt_name"
+        android:paddingBottom="@dimen/large_margin"
+        android:src="@drawable/avatar_default"
+        android:scaleType="fitCenter"
+        android:layout_width="@dimen/size_avatar_small"
+        android:layout_height="@dimen/size_avatar_small" />
+
+</RelativeLayout>
